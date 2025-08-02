@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Resume & Cover Letter Generator</title>
+</head>
+<body>
+    <h1>Generate Resume & Cover Letter</h1>
+    <form method="POST">
+        <label>Job Title:</label><br>
+        <input type="text" name="job_title"><br><br>
+        <label>Skills (comma separated):</label><br>
+        <input type="text" name="skills"><br><br>
+        <input type="submit" value="Generate">
+    </form>
+
+    {% if output %}
+        <h2>Generated Output:</h2>
+        <pre>{{ output }}</pre>
+    {% endif %}
+</body>
+</html>
